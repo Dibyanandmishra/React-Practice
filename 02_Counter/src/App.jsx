@@ -8,7 +8,17 @@ function App() {
 
   const addValue = () =>{
     if (counter <20) {
-      setCounter(counter+1)
+      // setCounter(counter+1)
+      // setCounter(counter+1)
+      // setCounter(counter+1)
+      // setCounter(counter+1)
+      // iski value 14 nahi 11 (only 1 time executation) ayegi... ye useState ki ek property h vo bundles me bhejta hai updation isliye
+
+      // agr aise hi 4 baar update krwana ho counter ko bina (counter+4) kre tb...
+      setCounter(preCounter => preCounter+1)
+      setCounter(preCounter => preCounter+1)
+      setCounter(preCounter => preCounter+1)
+      setCounter(preCounter => preCounter+1)
     }
     console.log("Value of counter after clicking ADD Value button is : "+counter);
   }
